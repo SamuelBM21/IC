@@ -9,7 +9,7 @@ def salva_par(n):
     with open("Tests/pares_seq.txt","w") as file:
         for i in range(n):
             numero1 = i + 1
-            numero2 = random.randint(0, 1)
+            numero2 = random.uniform(0.0, 1.0)
             file.write(str(numero1) + ";" + str(numero2) + "\n")
 
 

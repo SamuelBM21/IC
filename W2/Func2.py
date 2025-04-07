@@ -8,7 +8,7 @@ import random
 def  salva_par_csv(n):
     dados = []
     for i in range(n):
-        dados.append([random.randint(0,1), random.randint(0,1)])
+        dados.append([random.uniform(0.0,1.0), random.uniform(0.0,1.0)])
     
     df = pd.DataFrame(dados)
     df.to_csv("Tests/pares.csv", index=False, sep=";", header=False)

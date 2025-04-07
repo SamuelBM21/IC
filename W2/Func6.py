@@ -12,11 +12,11 @@ def plota_pontos():
         for linha in file:
             linha = linha.strip()
             valores = linha.split(";")
-            x.append(int(valores[0]))
-            y.append(int(valores[1]))
+            x.append(float(valores[0]))
+            y.append(float(valores[1]))
 
 
-    plt.scatter(x, y, color='red', s=10)
+    plt.scatter(x, y, color='green', s=50)
     plt.xlabel("Eixo X")
     plt.ylabel("Eixo Y")
     plt.title("Pontos gerados aleatoriamente")

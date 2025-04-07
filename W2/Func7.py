@@ -12,8 +12,8 @@ def plota_grafico():
         for linha in file:
             linha = linha.strip()
             valores = linha.split(";")
-            x.append(int(valores[0]))
-            y.append(int(valores[1]))
+            x.append(float(valores[0]))
+            y.append(float(valores[1]))
 
 
     plt.plot(x, y, marker='o', linestyle='-', color='blue')
